@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./vue.js"></script>
+    <title>Vue App</title>
+  </head>
+  <body>
+        <div id="app">{{content}}</div>
+
+        <script>
+            var app= new Vue({
+                el:'#app',
+                data:{
+                    content:'你好'
+                }
+            })
+        
+    setTimeout(function(){
+         app.$data.content='你好 世界'
+              },3000)
+        </script>
+    
+  </body>
+</html>
